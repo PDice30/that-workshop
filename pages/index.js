@@ -1,8 +1,21 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { Jumbotron, Button } from "reactstrap";
+import { Nav, Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
 
 const index = () =>
   <div>
+    <Navbar color="light" light expand="md">
+      <NavbarBrand href="/">Home</NavbarBrand>
+      <Nav className="ml-auto" navbar>
+        <NavItem>
+          <NavLink href="/about">About</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/help">Help</NavLink>
+        </NavItem>
+      </Nav>
+    </Navbar>
+
     <Jumbotron className="mb-0">
       <h1 className="display-3">Welcome!</h1>
       <p className="lead">
@@ -25,7 +38,7 @@ const index = () =>
         className="image image-rounded"
       />
       <p className="lead">
-        <Button color="primary">Learn More</Button>
+        <Button color="primary">Button</Button>
       </p>
     </Jumbotron>
   </div>
