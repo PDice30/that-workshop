@@ -21,6 +21,16 @@ module.exports = () => ({
       avatar: `${avatarUrl}tim`,
       biography: "Tim is a coding wizard.",
       email: "tim@headway.io"
+    },
+    {
+      id: "3",
+      firstname: "Phil",
+      lastname: "Deisinger",
+      title: "Software Engineer",
+      company: "CUNA Mutual",
+      avatar: `${avatarUrl}phil`,
+      biography: "Phil is a dude.",
+      email: "padeisinger@cunamutual.com"
     }
   ]
 });
